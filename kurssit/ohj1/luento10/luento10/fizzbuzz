@@ -1,0 +1,38 @@
+using System;
+using System.Text;
+using System.Linq;
+using System.Collections.Generic;
+
+/// @author Omanimi
+/// @version Päivämäärä
+/// <summary>
+/// 
+/// </summary>
+public class luento10
+{
+    
+    public static void Main()
+    {
+        for(int i = 1; i <= 1000; i++)
+        {
+            if (i % 3 ==0 && i % 5 ==0)
+            {
+                Console.WriteLine("fizzbuzz");
+            }
+            if (i % 3 == 0)
+            {
+                Console.WriteLine("fizz");
+            }
+            if (i % 5 == 0)
+            {
+                Console.WriteLine("buzz");
+            }
+            if(i % 3 != 0 && i % 5 != 0)
+            {
+                Console.WriteLine(i);
+            }
+                
+        }
+    }
+
+}
